@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./nservice.component.css']
 })
 export class NserviceComponent {
+  public title:string;
 
+  constructor(){
+    this.title="GRANJA EL RETORNO";
+  }
 }

@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NserviceComponent } from './components/nservice/nservice.component';
 import { ErrorComponent } from './components/error/error.component';
+import { ImgComponent } from './img/img.component';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { ErrorComponent } from './components/error/error.component';
     IndexComponent,
     AboutComponent,  
     ContactComponent, 
-    NserviceComponent, ErrorComponent,
+    NserviceComponent, ErrorComponent, ImgComponent,
   ],
   imports: [
     BrowserModule,

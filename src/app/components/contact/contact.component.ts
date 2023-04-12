@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  public title:string;
 
+  constructor(){
+    this.title="GRANJA EL RETORNO";
+  }
 }

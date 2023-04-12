@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent {
+  public title:string;
 
+  constructor(){
+    this.title="GRANJA EL RETORNO";
+  }
 }
