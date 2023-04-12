@@ -21,6 +21,8 @@ body{
     font-family: Serif_Sketch, Arial, Helvetica;
     font-size: 100%;
     background:url("../img/sendero.jpeg");
+    background-repeat: no-repeat ;
+    background-size: cover;
     background-attachment: fixed;
 }
 .clearfix{
@@ -28,41 +30,101 @@ body{
     clear: both;
 }
 
+h1{
+    font-family: Fake_Serif, Arial, Helvetica;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 5%;
+    
+}
+
 /*Navegador*/
-
-header{
-    display: block;
-    width: 100%;
-    height: 10%;
-    background: rgba(98, 80, 29, 0.655);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
     position: fixed;
-    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 90%;
+    
+  } 
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    margin: 0 10px;
+    transition: color 50ms, transform 500ms;
+    -webkit-transition: color 50ms, transform 500ms;
+    -moz-transition: color 50ms, transform 500ms;
+    -ms-transition: color 50ms, transform 500ms;
+    -o-transition: color 50ms, transform 500ms;
 }
-
-header ul{
-    display: block;
-    width: 100%;
-    height: inherit;
-    margin: 0% auto;
-}
-
-header ul li {
-    display: inline-block;
-    margin:1% auto;
-    margin-right: 10%;
-    text-align: center;    
-    line-height: 100%;
-}
-
-header ul li a{
-    display: block;
-    padding-right: 50%;
-    padding-left: 50%;
-    height: inherit;
+  
+  a {
+    color: #fff;
     text-decoration: none;
-    color: aliceblue;
-    width: 100%;
+  }
+  
+  /* Mostrar el menú en dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    nav {
+      display: block;
+    }
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Efecto hover en los elementos del menú */
+  li:hover {
+    font-size:20px;
+    background-color: rgba(255, 255, 255, 0.423);
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -o-transform: scale(1.3, 1.3);
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
 }
-header a:hover{
-    background: rgba(15, 9, 9, 0.471);
+  a:hover, .actived{
+    color: #0000009d;
+  }
+
+  /*Logo*/
+
+#logo {
+    width: 100px;
 }
+#logo:hover{
+    background: transparent;
+    cursor:default ;
+}
+
+/*contenedor*/
+
+#content{
+    width: 90%;
+    min-height: 900px;
+    margin: auto;
+    box-shadow: 0px 0px 30px black;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+}
+
