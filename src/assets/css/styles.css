@@ -8,10 +8,9 @@
     src: url("fonts/Serif_Sketch.ttf");
 }
 @font-face {
-    font-family: ForwardSerifBold;
-    src: url("fonts/ForwardSerifBold.otf");
+    font-family: Roboto;
+    src: url("fonts/Roboto.ttf");
 }
-
 *{
     margin: 0px;
     padding: 0px;
@@ -50,7 +49,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    
+    float: left;
   } 
   
   ul {
@@ -58,17 +57,18 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     margin: 0px;
-    padding: 20px;
+    padding: 10px;
   }
   
   li {
     list-style: none;
-    margin: 0 10px;
-    transition: color 50ms, transform 500ms;
-    -webkit-transition: color 50ms, transform 500ms;
-    -moz-transition: color 50ms, transform 500ms;
-    -ms-transition: color 50ms, transform 500ms;
-    -o-transition: color 50ms, transform 500ms;
+    margin-left: 20px;
+    margin-right: 70px;
+    transition: color 500ms, transform 500ms;
+    -webkit-transition: color 500ms, transform 500ms;
+    -moz-transition: color 500ms, transform 500ms;
+    -ms-transition: color 500ms, transform 500ms;
+    -o-transition: color 500ms, transform 500ms;
 }
   
   a {
@@ -124,7 +124,7 @@ header {
 
 #content{
     width: 90%;
-    min-height: 900px;
+    min-height: 780px ;
     margin: auto;
     box-shadow: 0px 0px 30px black;
     background: rgba(255, 255, 255, 0.7);
@@ -135,4 +135,29 @@ header {
     width: 50%;
     float: left;
     margin-right: 20px;
+    margin-left: 2px;
 }
+
+h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 155%;
+}
+p{
+  font-family: Roboto, Arial, Helvetica;
+  font-size: 120%;
+}
+.servicios ul, label{
+  display: block;
+  margin-top: -20px;
+  font-size: 120%;
+  font-family: Roboto, Arial, Helvetica;
+}
+.servicios ul li, label{
+  pointer-events: none;
+}
+
+.servicios p{
+  text-transform: uppercase;
+}
+

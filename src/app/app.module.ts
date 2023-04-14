@@ -10,14 +10,15 @@ import { NserviceComponent } from './components/nservice/nservice.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ImgComponent } from './img/img.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     AboutComponent,  
     ContactComponent, 
-    NserviceComponent, ErrorComponent, ImgComponent,
+    NserviceComponent, 
+    ErrorComponent, 
+    ImgComponent,   
   ],
   imports: [
     BrowserModule,
