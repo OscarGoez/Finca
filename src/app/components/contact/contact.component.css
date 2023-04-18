@@ -28,10 +28,21 @@
     text-transform: uppercase;
     font-size: 110%;
   }
+  #mesagge{
+    display: inline-flex;
+    margin-left: 8%;
+    margin-bottom: 20px;
+  }
+  #norma {  
+    margin-bottom: 10px;
+    margin-left: -8%;
+    font-family: Serif_Sketch;
+  }
 
   #normas{
+    display: inline-flex;
     margin-left: 100px;
-    width: 900px;
+    width: 600px;
     font-size: 80%;
     margin-bottom:10px;
     margin-left: 10%;

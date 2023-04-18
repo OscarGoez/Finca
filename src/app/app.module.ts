@@ -26,6 +26,8 @@ import { UserComponent } from './user/user.component';
   imports: [
     BrowserModule,
     routing,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

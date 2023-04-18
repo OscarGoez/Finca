@@ -1,9 +1,10 @@
 export class Visitantes{
     constructor(
         public _id:string,
-        public nombre:string,
-        public apellido:string,
-        public telefono:number,
-        public correo:string
+        public name:string,
+        public surname:string,
+        public phone:number,
+        public email:string,
+        public message:string
     ){}
 }

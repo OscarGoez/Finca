@@ -15,4 +15,10 @@ export class UserService{
     testService(){
         return 'Test service Angular'
     }
+
+    saveUser(user:Visitantes):Observable<any>{
+        let params = JSON.stringify(user);
+        let header = new HttpHeaders().set('content-type','application/json')
+        return this._http.post(this.url+'save-user',params,{headers:header})
+    }
 }

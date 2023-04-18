@@ -1,14 +1,25 @@
 <h2>Escribenos</h2>
-<form action="" method="post">
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+    
     <label for="name" aria-required="true">Nombre</label>
-    <input type="text" id="name">
+    <input type="text" id="name" name="name" #name="ngModel" [(ngModel)]="user.name" required>
+    <br><span *ngIf="name.touched && !name.valid">El nombre es necesario</span>
+
     <label for="surname">Apellido</label>
-    <input type="text" id="surname">
+    <input type="text" id="surname" name="surname" #surname="ngModel" [(ngModel)]="user.surname" required> 
+    <br><span *ngIf="surname.touched && !surname.valid">El apellido es necesario</span>
+
     <label for="phone">Telefono</label>
-    <input type="number">
+    <input type="number" name="phone" #phone="ngModel" [(ngModel)]="user.phone" required>
+    <br><span *ngIf="phone.touched && !phone.valid">El numero de telefono es necesario</span>
+
     <label for="email">Correo</label>
-    <input type="email">
+    <input type="email" name="email" #email="ngModel" [(ngModel)]="user.email" required>
+    <br><span *ngIf="email.touched && !email.valid">El correo es necesario</span>
+
     <label for="mesagge">Mensaje</label>
-    <textarea name="mesagge" id="mesagge" cols="30" rows="10"></textarea><br>
-    <input type="submit" id="submit">
+    <textarea name="mesagge" id="mesagge" cols="30" rows="10" name="mesagge" #mesagge="ngModel" [(ngModel)]="user.message" required></textarea><br>
+    <br><span *ngIf="mesagge.touched && !mesagge.valid">Debes ingresar un mensaje</span>
+
+    <input type="submit" id="submit" [disabled]="!userForm.form.valid">
 </form>
