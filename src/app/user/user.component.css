@@ -1,35 +1,116 @@
-h2{
+#form {
+    margin-left: -13%;
+    width: 90%;
+  }
+  
+  h2 {
     text-transform: uppercase;
-    font-size: 120%;
-    margin-left: 10%;
-}
-label{
+    font-size: 145%;
+    margin-left: 2%;
+  }
+  
+  label {
     margin-top: 10px;
-    margin-left: 13%;
-}
-input{
-    width: 355px;
-    margin-left: 13%;
+    margin-left: 2%;
+  }
+  
+  input {
+    width: 80%; /* Cambia el ancho al 100% para ocupar todo el espacio disponible */
+    margin-left: 2%;
     height: 25px;
     font-size: 20px;
-}
-textarea{
-    width: 355px;
-    margin-left: 13%;
+  }
+  
+  textarea {
+    width: 80%; /* Cambia el ancho al 100% para ocupar todo el espacio disponible */
+    margin-left: 2%;
     height: 150px;
     margin-top: 5px;
     font-size: 20px;
-}
-#submit{
+  }
+  
+  #submit {
     margin-top: 10px;
-    margin-left: 13%;
+    margin-left: 2%;
     text-transform: uppercase;
     font-size: 20px;
-}
-span{
-    width: 355px;
+  }
+  
+  span {
+    width: 80%; /* Cambia el ancho al 100% para ocupar todo el espacio disponible */
     margin-left: 13%;
     height: 25px;
-    font-size: 20px;
-    color: brown;
-}
+    color: red;
+    font-size: 18px;
+  }
+  
+  .api-response {
+    margin-top: 20px;
+    margin-left: 13%;
+    color: green;
+    font-size: 18px;
+  }
+  
+  /* Media query para ajustar estilos en pantallas más pequeñas */
+  @media (max-width: 600px) {
+    #form{
+        width: 200%;    
+        margin-left: -45%
+    }
+    h2 {
+      font-size: 120%; /* Reducir el tamaño de fuente en pantallas más pequeñas */
+      margin-left: 5%;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: Roboto, Arial, Helvetica;
+      font-size: 120%;
+    }
+    
+    .servicios ul,
+    label {
+      display: block;
+      margin-top: -20px;
+      font-size: 120%;
+      font-family: Roboto, Arial, Helvetica;
+    }
+  
+    label,
+    input,
+    textarea,
+    #submit,
+    span,
+    .api-response {
+      margin-left: 5%;
+    }
+
+    label {
+      margin-top: 10px;
+      margin-left: 2%;
+    }
+    
+    input {
+      width: 80%; /* Cambia el ancho al 100% para ocupar todo el espacio disponible */
+      margin-left: 2%;
+      height: 25px;
+      font-size: 20px;
+    }
+    
+    textarea {
+      width: 80%; /* Cambia el ancho al 100% para ocupar todo el espacio disponible */
+      margin-left: 2%;
+      height: 150px;
+      margin-top: 5px;
+      font-size: 20px;
+    }
+    
+    #submit {
+      margin-top: 10px;
+      margin-left: 2%;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+
+  }
+  

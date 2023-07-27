@@ -1,15 +1,15 @@
-
-<header>
-    <img id="logo" src="../assets/img/logo.png" alt="Logo">
-
+<header class="header">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <img id="logo" src="../assets/img/logo.png" alt="Logo">    
     <ul>       
-        <li> <a [routerLink]="['/inicio']"[routerLinkActive]="['actived']">INICIO</a></li>
-        <li> <a [routerLink]="['/contacto']"[routerLinkActive]="['actived']">CONTACTO</a></li>
-        <li> <a [routerLink]="['/quienes-somos']"[routerLinkActive]="['actived']">QUIENES SOMOS</a></li>
-        <li> <a [routerLink]="['/servicios']"[routerLinkActive]="['actived']">SERVICIOS</a></li>
+        <li class="nav"> <a [routerLink]="['/inicio']"[routerLinkActive]="['actived']">INICIO</a></li>
+        <li class="nav"> <a [routerLink]="['/contacto']"[routerLinkActive]="['actived']">CONTACTO</a></li>
+        <li class="nav"> <a [routerLink]="['/quienes-somos']"[routerLinkActive]="['actived']">QUIENES SOMOS</a></li>
+        <li class="nav"> <a [routerLink]="['/servicios']"[routerLinkActive]="['actived']">SERVICIOS</a></li>
     </ul>
+    
 </header>
 
-<section id="content">
+<section id="content">    
     <router-outlet></router-outlet>
 </section>

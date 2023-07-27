@@ -1,2 +1,12 @@
+.image-gallery img {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-left: 2px;
+  }
 
-
+@media only screen and (max-width: 600px) {
+    #sliderimg{
+        width: 98%;
+    }
+}

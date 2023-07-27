@@ -1,38 +1,59 @@
-<div id="title"><h1>{{title}}</h1></div>
+<div id="title">
+    <h1>{{ title }}</h1>
+  </div>
+  
+  <div id="contacto" class="two-columns">
 
-<div id="contacto">
     <section id="mapa">
-        <h3>UBICACION</h3><br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.7533048181463!2d-75.81431887487825!3d6.677455771354857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e45b1868a6329ff%3A0xa125be1082ee0012!2sLiborina%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1681419961297!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h3>Ubicación</h3><br>
+      <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4849.802631367818!2d-75.82264241532971!3d6.759640741045388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e45ae8c0e6e04ad%3A0xb0adb1702af243a!2sGranja%20El%20Retorno%20-%20Posada%20Rural!5e0!3m2!1ses!2sco!4v1684350626629!5m2!1ses!2sco" width="200px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+    
+    <section id="indication" class="servicios">
+      <h3>Ruta para llegar a la Granja El Retorno</h3>
+      <ol>
+        <li>Desde el túnel de Occidente</li>
+        <li>Dirígete San Jerónimo Medellín</li>
+        <li>Continúa por la via San Jerónimo-Sopetran</li>
+        <li>Continua por Olaya-Liborina-Sabanalarga</li>
+        <li>Gira a la izquierda en el parque pincipal de Liborina</li>
+        <li>Avanza dos calles y gira a la izquierda</li>
+        <li>Toma la ruta Liborina-Sabanalarga</li>
+        <li>continua 15,9 km aproximadamente</li>
+        <li>Y llegaras a Granja El Retorno - Posada Rural</li>
+      </ol>
+    </section>    
+  </div>
+
+  
+  <section id="message" class="two-columns">
+    
+    <div class="message-container" fxLayout="column" fxLayoutAlign="center">
+      <app-user></app-user>
+    </div>
+
     <section class="servicios" id="datos">
-        <h3>datos contacto</h3><br>
-        <label for="name">Nombre Responsable</label><br>
-        <label for="email">correo@gr.com</label><br>
-        <label for="horarios">Lunes a Viernes de 8:00AM a 6:00PM</label><br>
-        <h3>Ruta para llegar al destino</h3>
-        <ol>
-        <li>Toma la calle principal y continúa durante 2 km.</li>
-        <li>Gira a la derecha en la avenida 5 de Mayo y continúa durante 1 km.</li>
-        <li>Gira a la izquierda en la calle Hidalgo y continúa durante 500 m.</li>
-        <li>Gira a la derecha en la calle Juárez y continúa durante 200 m.</li>
-        <li>El destino estará a tu derecha.</li>
-        </ol>
-
+      <h3>datos de contacto</h3><br>
+      <label for="name">Henry Roldan</label><br>
+      <label for="email">henry@gr.com</label><br>
+      <label for="Telefono">300 1234567</label><br>
+<br>
+      <label for="name">Otto RR</label><br>
+      <label for="email">otto@gr.com</label><br>
+      <label for="Telefono">300 9876541</label><br><br>
+      <label for="horarios">Lunes a Sábado de 8:00AM a 6:00PM</label><br>
     </section>
-</div>
-<section id="mesagge">
-    <app-user></app-user>
-</section>
-
-    <section class="servicios" id="normas">
-        <ul>
-            <li><h3 id="norma">normas de estadia</h3></li>
-            <li>Horarios de check-in y check-out: Los huéspedes pueden hacer el check-in a partir de las 14:00 horas y el check-out hasta las 12:00 horas del día de salida. Si un huésped desea hacer el check-out más tarde, puede hacerlo previa solicitud y con un cargo adicional.</li>
-            <li>Número de personas por habitación: Cada habitación está diseñada para una ocupación máxima de dos personas. Si un huésped desea alojarse con más personas, deberá reservar una habitación adicional.</li>
-            <li>Política de cancelación: Se permite la cancelación gratuita hasta 48 horas antes de la fecha de llegada. Si se cancela después de este plazo o en caso de no presentarse, se cargará el 50% del costo total de la reserva.</li>
-        </ul>      
-    </section>
-
-
-
+    
+  </section>
+  
+  <section class="servicios" id="normas">
+    <ul>
+      <li>
+        <h3 id="norma">Normas de Estadía</h3>
+      </li>
+      <li>Horarios de check-in y check-out: Los huéspedes pueden hacer el check-in a partir de las 14:00 horas y el check-out hasta las 12:00 horas del día de salida. Si un huésped desea hacer el check-out más tarde, puede hacerlo previa solicitud y con un cargo adicional.</li>
+      <li>Número de personas por habitación: Cada habitación está diseñada para una ocupación máxima de dos personas. Si un huésped desea alojarse con más personas, deberá reservar una habitación adicional.</li>
+      <li>Política de cancelación: Se permite la cancelación gratuita hasta 48 horas antes de la fecha de llegada. Si se cancela después de este plazo o en caso de no presentarse, se cargará el 50% del costo total de la reserva.</li>
+    </ul>
+  </section>
+  

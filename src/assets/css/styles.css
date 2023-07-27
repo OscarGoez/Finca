@@ -1,163 +1,237 @@
-/*Tipos de letra*/
-@font-face {
+
+
+  /*Tipos de letra*/
+  @font-face {
     font-family: Fake_Serif;
     src: url("fonts/Fake_Serif.ttf");
-}
-@font-face {
+  }
+
+  @font-face {
     font-family: Serif_Sketch;
     src: url("fonts/Serif_Sketch.ttf");
-}
-@font-face {
+  }
+
+  @font-face {
     font-family: Roboto;
     src: url("fonts/Roboto.ttf");
-}
-*{
-    margin: 0px;
-    padding: 0px;
-}
+  }
 
-body{
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
     font-family: Serif_Sketch, Arial, Helvetica;
     font-size: 100%;
-    background:url("../img/sendero.jpeg");
-    background-repeat: no-repeat ;
+    background: url("../img/sendero.jpeg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-.clearfix{
-    float: none;
-    clear: both;
-}
+  }
 
-h1{
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h1 {
     font-family: Fake_Serif, Arial, Helvetica;
     font-size: 60px;
     text-align: center;
     padding-bottom: 5%;
     margin-top: 8%;
-    
-}
+  }
+  .image-gallery img {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-left: 2px;
+  }
 
-/*Navegador*/
-header {
+  /* Navegador */
+  header {
     display: flex;
     background: #8e7837d8;
     justify-content: space-between;
     align-items: center;
     padding: 1px;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    float: left;
-  } 
-  
+    z-index: 9999;
+  }
+  #logo{
+    margin-left: 10%;
+  }
+
   ul {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    margin: 0px;
+    margin: 0;
     padding: 10px;
   }
-  
+
   li {
+    font-family: 'Serif_Sketch.ttf', Arial, Helvetica ;
     list-style: none;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 70px;
     transition: color 500ms, transform 500ms;
-    -webkit-transition: color 500ms, transform 500ms;
-    -moz-transition: color 500ms, transform 500ms;
-    -ms-transition: color 500ms, transform 500ms;
-    -o-transition: color 500ms, transform 500ms;
-}
-  
+  }
+
   a {
     color: #fff;
     text-decoration: none;
   }
-  
-  /* Mostrar el menú en dispositivos móviles */
-  @media only screen and (max-width: 600px) {
-    nav {
-      display: block;
-    }
-    ul {
-      flex-direction: column;
+  @media screen and (orientation: landscape) {
+      /* Navegador */
+    header {
+      display: flex;
+      background: #8e7837d8;
+      justify-content: space-between;
       align-items: center;
+      padding: 1px;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
     }
+    #logo{
+      margin-left: 10%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 10px;
+    }
+
     li {
-      margin: 20px 0;
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 70px;
+      transition: color 500ms, transform 500ms;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
     }
   }
-  
-  /* Efecto hover en los elementos del menú */
-  li:hover {
-    font-size:20px;
-    background-color: rgba(255, 255, 255, 0.423);
-    transform: scale(1.3, 1.3);
-    -webkit-transform: scale(1.3, 1.3);
-    -moz-transform: scale(1.3, 1.3);
-    -ms-transform: scale(1.3, 1.3);
-    -o-transform: scale(1.3, 1.3);
-    border-radius: 30%;
-    -webkit-border-radius: 30%;
-    -moz-border-radius: 30%;
-    -ms-border-radius: 30%;
-    -o-border-radius: 30%;
-}
-  a:hover, .actived{
-    color: #000000eb;
+
+/* Mostrar el menú en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto; /* Restaura la altura automática del header */
   }
 
-  /*Logo*/
+  ul {
+    display: none; /* Oculta la lista de elementos del menú */
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #8e7837d8;
+    padding: 10px;
+    margin-top: 5px;
+  }
 
+  li {
+    margin: 10px 0;
+  }
+
+  header:hover ul {
+    display: flex; /* Muestra la lista de elementos del menú al hacer hover en el header */
+  }
+}
+
+/* Efecto hover en los elementos del menú */
+.nav:hover {
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.423);
+  transform: scale(1.3);
+  border-radius: 30%;
+}
+
+a:hover,
+.actived {
+  color: #000000eb;
+}
+
+.menu-toggle{
+  font-size: 150%;
+}
+
+/* Logo */
 #logo {
-    margin-left: 8%;
-    width: 100px;
-}
-#logo:hover{
-    background: transparent;
-    cursor:default ;
-}
-
-/*contenedor*/
-
-#content{
-    width: 90%;
-    min-height: 780px ;
-    margin: auto;
-    box-shadow: 0px 0px 30px black;
-    background: rgba(255, 255, 255, 0.7);
-    padding-top: 10px;
+  margin-left: 50%;
+  width: 100px;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -ms-border-radius: 3px 3px 3px 3px;
+  -o-border-radius: 3px 3px 3px 3px;
+  box-shadow: 5px -1px 10px 1px;
 }
 
-.image-gallery img{
-    width: 50%;
-    float: left;
-    margin-right: 20px;
-    margin-left: 2px;
+#logo:hover {
+  background: transparent;
+  cursor: default;
 }
 
-h3{
+/* Contenedor */
+#content {
+  width: 90%;
+  min-height: 780px;
+  margin: auto;
+  box-shadow: 0px 0px 30px black;
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 2px; /* Ajusta el espacio superior para evitar que el contenido se solape con el header */
+}
+
+.image-gallery img {
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+  margin-left: 2px;
+}
+
+h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 155%;
+  text-align: center;
+  text-transform: uppercase;
 }
-p{
+
+p {
   font-family: Roboto, Arial, Helvetica;
   font-size: 120%;
 }
-.servicios ul, label{
+
+.servicios ul,
+label {
   display: block;
   margin-top: -20px;
   font-size: 120%;
   font-family: Roboto, Arial, Helvetica;
 }
-.servicios ul li, label{
+
+.servicios ul li,
+label {
   pointer-events: none;
 }
 
-.servicios p{
+.servicios p {
   text-transform: uppercase;
 }
 
+#indication ol li:hover {
+  transition: none !important;
+}

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-about',
@@ -12,3 +13,4 @@ export class AboutComponent {
     this.title="GRANJA EL RETORNO";
   }
 }
+

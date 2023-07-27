@@ -15,6 +15,7 @@ export class ImgComponent{
       { src: '../../assets/img/img1.jpg', alt: 'img1' },
       { src: '../../assets/img/img2.jpg', alt: 'img2' },
       { src: '../../assets/img/img3.jpg', alt: 'img3' },
+      { src: '../../assets/img/img4.jpg', alt: 'img4' },
     ];
   }
 
@@ -25,7 +26,7 @@ export class ImgComponent{
   ngOnInit() {
     setInterval(() => {
       this.nextImage();
-    }, 5000);
+    }, 3000);
   }
 }
 

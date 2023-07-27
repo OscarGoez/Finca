@@ -12,7 +12,8 @@ import { NserviceComponent } from './components/nservice/nservice.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ImgComponent } from './img/img.component';
 import { UserComponent } from './user/user.component';
-
+import { EmailService } from './services/email.service';
+import { UserService } from './services/user.services';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,7 @@ import { UserComponent } from './user/user.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [appRoutingProviders],
+  providers: [appRoutingProviders,EmailService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

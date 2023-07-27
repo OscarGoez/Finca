@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  height: 50px;
+}
+
+#logo {
+  margin: 0.1%;  
+  width: 60px;
+}
+
+.menu-toggle {
+  font-size: 150%;
+  margin-left: 2%;
+  margin-right: -10%;
+  display: none;
+}
+
+
+li {
+  font-size: 150%;
+  margin-right: 15px;
+}
+a{
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) { 
+  
+  #logo {
+    margin-left: 35%;
+    width: 80px;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -ms-border-radius: 3px 3px 3px 3px;
+    -o-border-radius: 3px 3px 3px 3px;
+    box-shadow: 5px -1px 10px 1px;
+  }
+  
+  .menu-toggle {
+    font-size: 150%;
+    margin-left: 2%;
+    margin-right: -10%;
+    display: inline;
+  }
+}

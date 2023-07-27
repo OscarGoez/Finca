@@ -1,49 +1,104 @@
-#contacto{
-    display: inline-flex;
-    margin-bottom: 30px;
-  }
-  #mapa{
-    margin-left: 150px;
-    margin-right: 50px;
-    display: inline;
-  }
-  #datos label, p{
-    width: 400px;
-    height: 10%;
-    margin-left: 20px;  
-  }
-  .servicios ul, label{
-    display: block;
-    margin-top: -20px;
-    font-size: 120%;
-    font-family: Roboto, Arial, Helvetica;
-  }
-  .servicios ul, li, label{
-    pointer-events: none;
-    font-size: 120%;
-    font-family: Roboto, Arial, Helvetica;
-  }
-  
-  h3{
-    text-transform: uppercase;
-    font-size: 110%;
-  }
-  #mesagge{
-    display: inline-flex;
-    margin-left: 8%;
-    margin-bottom: 20px;
-  }
-  #norma {  
-    margin-bottom: 10px;
-    margin-left: -8%;
-    font-family: Serif_Sketch;
+#title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+#contacto section {
+  width: 45%;
+  margin-bottom: 30px;
+}
+#indication h3 {
+  text-align: left;
+}
+
+#indication ol {
+  margin-left: 20px;
+}
+#indication ol li {
+    font-size: 20px;
+}
+
+#mapa {
+  width: 100%;
+  text-align: center;
+  margin-right: 40px;
+}
+#mapa h3{
+  margin-left: -60%;
+}
+
+
+#maps {
+  width: 80%;
+}
+#datos{
+  margin-top: -13px;
+  margin-left: -12%;
+  width: 37%;
+}
+#datos h3{
+  text-transform: uppercase; 
+  text-align: left;
+}
+
+#message {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.message-container{
+  width: 50%;
+}
+
+
+#normas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#norma {
+  margin-bottom: 10px;
+  font-family: Serif_Sketch;
+}
+
+#normas ul li{
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #contacto section {
+    width: 100%;
   }
 
-  #normas{
-    display: inline-flex;
-    margin-left: 100px;
-    width: 600px;
-    font-size: 80%;
-    margin-bottom:10px;
-    margin-left: 10%;
+  #message,
+  #normas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+
+  #mapa h3{
+    text-transform: uppercase; 
+    text-align: end;
+    margin-right: 20%;
+  }
+
+  #datos h3{
+    text-align: left;
+  }
+  .servicios ul{  
+      display: contents;      
+  }
 }
